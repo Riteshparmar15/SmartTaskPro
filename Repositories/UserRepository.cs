@@ -12,7 +12,7 @@ namespace SmartTaskPro.Repositories
     {
         private readonly AppDbContext _context;
         public UserRepository(AppDbContext context)
-        {
+    {
             _context = context;
         }
         public IQueryable<User> Query() => _context.Users.AsQueryable();

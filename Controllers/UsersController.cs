@@ -44,17 +44,8 @@ namespace SmartTaskPro.Controllers
         [HttpPut("{id}")]
         [Authorize(Policy = "RequireAdmin")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto dto)
+    {
         {
-            var item = await _svc.UpdateAsync(id, dto);
-            return Ok(item);
-        }
-
-        [HttpDelete("{id}")]
-        [Authorize(Policy = "RequireAdmin")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            await _svc.DeleteAsync(id);
-            return NoContent();
         }
     }
 }

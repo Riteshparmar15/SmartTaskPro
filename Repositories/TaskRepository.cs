@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Microsoft.EntityFrameworkCore;
 using SmartTaskPro.Data;
 using SmartTaskPro.Models;
@@ -33,5 +34,11 @@ namespace SmartTaskPro.Repositories
         {
             return await _context.Tasks.Where(t => t.AssignedToUserId == userId).ToListAsync();
         }
+=======
+﻿namespace SmartTaskPro.Repositories
+{
+    public class TaskRepository
+    {
+>>>>>>> cf439325d2739b097b26b01e22d377ce2a2fa18b
     }
 }

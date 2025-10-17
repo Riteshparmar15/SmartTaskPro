@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -99,5 +100,11 @@ namespace SmartTaskPro.Services
             _repo.Update(task);
             await _repo.SaveChangesAsync();
         }
+=======
+﻿namespace SmartTaskPro.Services
+{
+    public class TaskService
+    {
+>>>>>>> cf439325d2739b097b26b01e22d377ce2a2fa18b
     }
 }

@@ -89,7 +89,7 @@ namespace SmartTaskPro.Services
             );
 
             return Task.FromResult(new AuthResultDto
-            {
+    {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
                 ExpiresAt = token.ValidTo
             });

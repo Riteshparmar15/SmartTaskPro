@@ -44,8 +44,6 @@ namespace SmartTaskPro.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _svc.DeleteAsync(id, User);
-            return NoContent();
         }
     }
 }

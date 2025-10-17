@@ -16,6 +16,7 @@ namespace SmartTaskPro.Data
             _httpContextAccessor = httpContextAccessor;
         }
 
+        // Example DbSets
         public DbSet<User> Users { get; set; }
         public DbSet<TaskItem> Tasks { get; set; }
     }
