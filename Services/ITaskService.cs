@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿using SmartTaskPro.DTOs;
+using SmartTaskPro.DTOs;
 using System.Security.Claims;
 
 namespace SmartTaskPro.Services
@@ -11,11 +10,5 @@ namespace SmartTaskPro.Services
         Task<TaskDto> CreateAsync(CreateTaskDto dto, ClaimsPrincipal currentUser);
         Task<TaskDto> UpdateAsync(int id, UpdateTaskDto dto, ClaimsPrincipal currentUser);
         Task DeleteAsync(int id, ClaimsPrincipal currentUser);
-=======
-﻿namespace SmartTaskPro.Services
-{
-    public interface ITaskService
-    {
->>>>>>> cf439325d2739b097b26b01e22d377ce2a2fa18b
     }
 }

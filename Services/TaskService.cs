@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using SmartTaskPro.DTOs;
 using SmartTaskPro.Models;
@@ -9,7 +7,7 @@ using System.Security.Claims;
 
 namespace SmartTaskPro.Services
 {
-    
+
     public class TaskService : ITaskService
     {
         private readonly ITaskRepository _repo;
@@ -100,11 +98,5 @@ namespace SmartTaskPro.Services
             _repo.Update(task);
             await _repo.SaveChangesAsync();
         }
-=======
-﻿namespace SmartTaskPro.Services
-{
-    public class TaskService
-    {
->>>>>>> cf439325d2739b097b26b01e22d377ce2a2fa18b
     }
 }

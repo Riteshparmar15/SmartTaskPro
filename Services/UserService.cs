@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,8 +6,8 @@ using SmartTaskPro.Models;
 using SmartTaskPro.Repositories;
 
 namespace SmartTaskPro.Services
-{   
-    
+{
+
     public class UserService : IUserService
     {
         private readonly IUserRepository _repo;
@@ -80,11 +79,5 @@ namespace SmartTaskPro.Services
             _repo.Update(user);
             await _repo.SaveChangesAsync();
         }
-=======
-﻿namespace SmartTaskPro.Services
-{
-    public class UserService
-    {
->>>>>>> cf439325d2739b097b26b01e22d377ce2a2fa18b
     }
 }
