@@ -1,4 +1,6 @@
-﻿namespace SmartTaskPro.Services
+﻿using SmartTaskPro.DTOs;
+
+namespace SmartTaskPro.Services
 {
     public interface IAuthService
     {
